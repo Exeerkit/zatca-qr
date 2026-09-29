@@ -2,7 +2,7 @@
 
 **ZATCA (Saudi FATOORA) e-invoice QR payloads — zero dependencies, no server, tested against the specification.**
 
-![tests](https://img.shields.io/badge/tests-38%20passing-brightgreen.svg)
+[![CI](https://github.com/Exeerkit/zatca-qr/actions/workflows/ci.yml/badge.svg)](https://github.com/Exeerkit/zatca-qr/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![release](https://img.shields.io/github/v/release/exeerkit/zatca-qr)](https://github.com/exeerkit/zatca-qr/releases)
 

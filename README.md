@@ -4,7 +4,7 @@
 
 **تولّد رمز QR لفواتير زاتكا السعودية وتقرأه. بدون مكتبات خارجية وبدون خادم.**
 
-![tests](https://img.shields.io/badge/tests-38%20passing-brightgreen.svg)
+[![CI](https://github.com/Exeerkit/zatca-qr/actions/workflows/ci.yml/badge.svg)](https://github.com/Exeerkit/zatca-qr/actions/workflows/ci.yml)
 ![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![release](https://img.shields.io/github/v/release/exeerkit/zatca-qr)](https://github.com/exeerkit/zatca-qr/releases)
