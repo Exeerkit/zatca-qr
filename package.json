@@ -1,6 +1,6 @@
 {
   "name": "zatca-qr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ZATCA (Saudi FATOORA) e-invoice QR: encode, decode and validate in TLV + Base64. Byte-accurate Arabic text, zero dependencies. مولّد وقارئ رمز فاتورة زاتكا.",
   "type": "module",
   "main": "./src/index.js",

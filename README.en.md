@@ -93,6 +93,12 @@ node examples/node.mjs        # CLI example, nothing to install
 node --test             # 38 tests, zero dependencies
 ```
 
+## Errors and warnings
+
+Every error and warning carries a stable `code` field, for example `FIELD_TOO_LONG`,
+`VAT_NUMBER_FORMAT` or `PHASE2_INCOMPLETE`, so you can branch on it instead of matching message
+text. The full table lives in the Arabic README: [README.md](README.md).
+
 ## References
 
 - [ZATCA detailed technical guideline (PDF)](https://zatca.gov.sa/en/E-Invoicing/Introduction/Guidelines/Documents/E-invoicing-Detailed-Technical-Guideline.pdf)
