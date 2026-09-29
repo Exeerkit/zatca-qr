@@ -1,0 +1,34 @@
+name: Publish to npm
+
+# يعمل عند دفع وسم إصدار مثل v1.0.2، أو يدوياً من تبويب Actions.
+# لا يستخدم أي توكن: npm تتحقق من هوية GitHub عبر OIDC (Trusted Publishing).
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # لازم للتحقق عبر OIDC
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+
+      # Trusted Publishing يحتاج npm 11.5.1 أو أحدث
+      - name: Upgrade npm
+        run: npm install -g npm@latest
+
+      - name: Run tests
+        run: node --test
+
+      # بلا توكن وبلا رمز تحقق، ومعها إثبات بناء موقّع تلقائياً
+      - name: Publish
+        run: npm publish --access public
