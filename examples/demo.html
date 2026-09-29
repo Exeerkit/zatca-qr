@@ -103,12 +103,9 @@
   <body>
     <div class="wrap">
       <header>
-        <h1>رمز فاتورة ZATCA — توليد مباشر في المتصفح</h1>
-        <p>
-          تُبنى الحمولة هنا بصيغة TLV ثم Base64، كما تفرضه هيئة الزكاة والضريبة والجمارك على
-          كل فاتورة ضريبية في المملكة.
-        </p>
-        <p class="privacy">لا يُرسل أي حرف إلى أي خادم — كل الحساب يجري في هذا المتصفح.</p>
+        <h1>مولّد رمز فاتورة زاتكا</h1>
+        <p>اكتب بيانات الفاتورة ويطلع لك الرمز جاهز. كل شي يصير في متصفحك.</p>
+        <p class="privacy">ما نرسل بياناتك لأي مكان.</p>
       </header>
 
       <div class="grid">
@@ -120,11 +117,11 @@
             <div class="counter" id="sellerCounter"></div>
           </div>
           <div class="field">
-            <label for="vatNumber">الرقم الضريبي (Tag 2) — 15 رقماً يبدأ وينتهي بـ3</label>
+            <label for="vatNumber">الرقم الضريبي (Tag 2) · 15 رقماً يبدأ وينتهي بـ3</label>
             <input id="vatNumber" value="300000000000003" inputmode="numeric" />
           </div>
           <div class="field">
-            <label for="timestamp">الطابع الزمني (Tag 3) — ISO 8601 مع منطقة زمنية</label>
+            <label for="timestamp">وقت الفاتورة (Tag 3) · ISO 8601 مع منطقة زمنية</label>
             <input id="timestamp" value="2026-04-18T13:30:00+03:00" />
             <div class="counter">
               اتركه كما هو أو استخدم <code>new Date()</code> في تطبيقك.
@@ -142,7 +139,7 @@
             </div>
           </div>
 
-          <h2 style="margin-top: 22px">الفحص مقابل المواصفة</h2>
+          <h2 style="margin-top: 22px">فحص الفاتورة</h2>
           <ul class="issues" id="issues"></ul>
         </section>
 
@@ -162,10 +159,10 @@
         </section>
 
         <section class="card" style="grid-column: 1 / -1">
-          <h2>تفكيك الحمولة بايتاً بايتاً</h2>
+          <h2>تفكيك الرمز بايت بايت</h2>
           <p class="note" style="text-align: right">
-            لاحظ العمود الأخير: الطول المكتوب في TLV هو عدد <b>البايتات</b> لا عدد الأحرف. الحرف
-            العربي بايتان، وهذا أشهر سبب لرفض الرمز في الأنظمة المحاسبية.
+            لاحظ العمود الأخير: الطول بالبايتات مو بالحروف. الحرف العربي بايتان. هذا أشهر سبب
+            لرفض الرمز.
           </p>
           <table>
             <thead>
@@ -183,9 +180,9 @@
       </div>
 
       <footer>
-        مكتبة <code>zatca-qr</code> — بلا تبعيات، تعمل في Node والمتصفح وCloudflare Workers.
+        مكتبة <code>zatca-qr</code> بدون مكتبات خارجية. تعمل في Node والمتصفح وCloudflare Workers.
         <br />
-        هذه الوحدة جزء من قالب <a href="https://www.vibeio.dev">VibeIO</a> لبناء تطبيقات SaaS عربية.
+        جزء من قالب <a href="https://www.vibeio.dev">VibeIO</a> لبناء تطبيقات SaaS عربية.
       </footer>
     </div>
 
