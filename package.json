@@ -1,0 +1,56 @@
+{
+  "name": "zatca-qr",
+  "version": "1.0.0",
+  "description": "Zero-dependency ZATCA (Saudi FATOORA) e-invoice QR encoder and decoder: TLV + Base64, Phase 1 and Phase 2 fields, Arabic-safe UTF-8 byte lengths.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test test/",
+    "demo": "node examples/node.mjs"
+  },
+  "keywords": [
+    "zatca",
+    "fatoora",
+    "e-invoicing",
+    "saudi-arabia",
+    "vat",
+    "qr",
+    "qrcode",
+    "tlv",
+    "base64",
+    "invoice",
+    "arabic",
+    "rtl",
+    "ksa",
+    "tax"
+  ],
+  "author": "VibeIO <hello@vibeio.dev>",
+  "license": "MIT",
+  "homepage": "https://www.vibeio.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exeerkit/zatca-qr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/exeerkit/zatca-qr/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
