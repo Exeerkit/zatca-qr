@@ -48,10 +48,10 @@
   "homepage": "https://www.vibeio.dev",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exeerkit/zatca-qr.git"
+    "url": "git+https://github.com/Exeerkit/zatca-qr.git"
   },
   "bugs": {
-    "url": "https://github.com/exeerkit/zatca-qr/issues"
+    "url": "https://github.com/Exeerkit/zatca-qr/issues"
   },
   "engines": {
     "node": ">=18"
