@@ -2,9 +2,9 @@
 
 **ZATCA (Saudi FATOORA) e-invoice QR payloads — zero dependencies, no server, tested against the specification.**
 
-[![CI](https://github.com/exeerkit/zatca-qr/actions/workflows/ci.yml/badge.svg)](https://github.com/exeerkit/zatca-qr/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/zatca-qr.svg)](https://www.npmjs.com/package/zatca-qr)
+![tests](https://img.shields.io/badge/tests-38%20passing-brightgreen.svg)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![release](https://img.shields.io/github/v/release/exeerkit/zatca-qr)](https://github.com/exeerkit/zatca-qr/releases)
 
 > The Arabic-first README is the primary one: [README.md](README.md).
 
@@ -26,9 +26,8 @@ before you issue it.
 ## Install
 
 ```bash
-npm install zatca-qr
-# or straight from the repository
-npm install github:exeerkit/zatca-qr
+npm install github:exeerkit/zatca-qr   # available now, straight from the repository
+npm install zatca-qr                   # once the package is published to npm
 ```
 
 Zero dependencies. ESM only. Runs in Node 18+, browsers, Cloudflare Workers, Deno and Bun.

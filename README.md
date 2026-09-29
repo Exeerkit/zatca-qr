@@ -4,10 +4,10 @@
 
 **رمز QR لفاتورة ZATCA الضريبية — بلا تبعيات، بلا خادم، ومختبر مقابل المواصفة.**
 
-[![CI](https://github.com/exeerkit/zatca-qr/actions/workflows/ci.yml/badge.svg)](https://github.com/exeerkit/zatca-qr/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/zatca-qr.svg)](https://www.npmjs.com/package/zatca-qr)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![tests](https://img.shields.io/badge/tests-38%20passing-brightgreen.svg)
 ![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![release](https://img.shields.io/github/v/release/exeerkit/zatca-qr)](https://github.com/exeerkit/zatca-qr/releases)
 
 </div>
 
@@ -30,9 +30,8 @@
 ## التثبيت
 
 ```bash
-npm install zatca-qr
-# أو مباشرة من المستودع
-npm install github:exeerkit/zatca-qr
+npm install github:exeerkit/zatca-qr   # متاح الآن من المستودع
+npm install zatca-qr                   # بعد نشر الحزمة على npm
 ```
 
 بلا أي تبعية، ESM فقط، وتعمل في Node 18+ والمتصفح وCloudflare Workers وDeno وBun.
