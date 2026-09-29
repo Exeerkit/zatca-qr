@@ -167,7 +167,7 @@ python3 -m http.server 8080
 
 ```bash
 node examples/node.mjs   # مثال سريع بدون تثبيت
-node --test test/        # 38 اختبار بدون مكتبات
+node --test        # 38 اختبار بدون مكتبات
 ```
 
 ## الاختبارات

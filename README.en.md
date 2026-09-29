@@ -88,7 +88,7 @@ git clone https://github.com/exeerkit/zatca-qr
 cd zatca-qr
 python3 -m http.server 8080   # open http://localhost:8080/examples/demo.html
 node examples/node.mjs        # CLI example, nothing to install
-node --test test/             # 38 tests, zero dependencies
+node --test             # 38 tests, zero dependencies
 ```
 
 ## References

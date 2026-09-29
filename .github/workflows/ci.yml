@@ -20,6 +20,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       # لا تبعيات: لا خطوة تثبيت، الاختبارات تعمل مباشرة
       - name: Run tests
-        run: node --test test/
+        run: node --test
       - name: Smoke-test the example
         run: node examples/node.mjs > /dev/null

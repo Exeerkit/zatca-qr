@@ -17,7 +17,7 @@
 ## قبل أن تفتح طلب دمج
 
 ```bash
-node --test test/        # يجب أن تمر كلها
+node --test        # يجب أن تمر كلها
 node examples/node.mjs   # يجب أن يعمل المثال
 ```
 
