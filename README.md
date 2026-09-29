@@ -4,6 +4,7 @@
 
 **تولّد رمز QR لفواتير زاتكا السعودية وتقرأه. بدون مكتبات خارجية وبدون خادم.**
 
+[![npm](https://img.shields.io/npm/v/zatca-qr)](https://www.npmjs.com/package/zatca-qr)
 [![CI](https://github.com/Exeerkit/zatca-qr/actions/workflows/ci.yml/badge.svg)](https://github.com/Exeerkit/zatca-qr/actions/workflows/ci.yml)
 ![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -32,8 +33,9 @@
 ## التثبيت
 
 ```bash
-npm install github:exeerkit/zatca-qr   # متاح الآن من المستودع
-npm install zatca-qr                   # بعد نشر الحزمة على npm
+npm install zatca-qr
+# أو مباشرة من المستودع
+npm install github:exeerkit/zatca-qr
 ```
 
 بدون أي مكتبة خارجية. تعمل في Node 18 وأحدث، وفي المتصفح، وفي Cloudflare Workers وDeno وBun.
